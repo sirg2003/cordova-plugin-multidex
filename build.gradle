@@ -36,4 +36,6 @@ dependencies {
   compile 'com.android.support:appcompat-v7:25.1.1'
   compile 'com.google.android.gms:play-services-ads:10.2.0'
 }
-apply plugin: 'com.google.gms.google-services'
+// apply plugin: 'com.google.gms.google-services'
+// class must be used instead of id(string) to be able to apply plugin from non-root gradle file
+apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
